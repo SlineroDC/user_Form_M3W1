@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- requested meta tags and links to css and fonts -->
     <meta name="description" content="aca pones una descripcion del sitio">
-    <meta name="keywords" content="aca pones palabras claves separadas por coma">
+    <meta name="keywords" content="Page about Js">
     <meta name="sitedomain" content="aca pones la url del sitio o del github">
-    <meta name="organization" content="aca poner tu usuario de github">
+    <meta name="organization" content="SlineroDC">
     <meta name="author" content="Sebastian Linero De Castro">
     <meta name="designer" content="Sebastian Linero De Castro">
     <meta name="copyright" content="© 2025 SlineroDC. All rights reserved">
@@ -18,22 +19,49 @@
     <title>User message</title>
 </head>
 <body>
+    <!-- This heading welcomes users -->
     <header>
-        <h1></h1>
-
+        <h1>Welcome to our website</h1>
+        <!-- Navigation bar created to redirect on the page -->
+        <nav>
+            <li><a href="#about">About This</a></li>
+            <li><a href="#footer">Contact</a></li>
+        </nav>
     </header>
 
     <main>
-        <section>
-            <form action="">
+        <!-- We created a section for a brief description -->
+        <section id="about">
+            <h2>Learn How to Interact with Our Webpage</h2>
+            <p>Interact with the webpage using HTML, CSS, and JavaScript to access and manipulate elements.
+            </p>
+        </section>
 
+        <!-- A section was created with a form to send data messages to users. -->
+        <section id="Login">
+            <h2>Login</h2>
+            <form action="/send" method="post">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" placeholder="Enter your name" required>
 
+                <label for="age">Age:</label>
+                <input type="text" id="age" name="age" placeholder="Enter your age" required >
 
+                <button id="btninfo">Send</button>
             </form>
         </section>
     </main>
+
+    <!-- This section is for our footer with our contact information. -->
     <footer>
-        
+        <article class="redes-sociales">
+            <h3>Social Networks</h3>
+            <a href="" target="_blank"><img class="redes-sociales" src="" alt="logox"></a>
+            <a href="" target="_blank"><img class="redes-sociales" src="" alt="logoy"></a>
+        </article>
+
+        <p class="copy">&copy; 2025 Sebastián Linero</p>
     </footer>
+    <script src="./src/js/sistema_interactivo.js"></script>
 </body>
 </html>
