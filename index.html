@@ -3,8 +3,8 @@
 <head>
     <!-- requested meta tags and links to css and fonts -->
     <meta name="description" content="aca pones una descripcion del sitio">
-    <meta name="keywords" content="Page about Js">
-    <meta name="sitedomain" content="aca pones la url del sitio o del github">
+    <meta name="keywords" content="Page about Js,Integration between with Js">
+    <meta name="sitedomain" content="https://github.com/SlineroDC/user_Form_M3W1.git">
     <meta name="organization" content="SlineroDC">
     <meta name="author" content="Sebastian Linero De Castro">
     <meta name="designer" content="Sebastian Linero De Castro">
@@ -25,7 +25,7 @@
         <!-- Navigation bar created to redirect on the page -->
         <nav>
             <li><a href="#about">About This</a></li>
-            <li><a href="#footer">Contact</a></li>
+            <li><a href="#redes">Contact</a></li>
         </nav>
     </header>
 
@@ -38,7 +38,7 @@
         </section>
 
         <!-- A section was created with a form to send data messages to users. -->
-        <section id="Login">
+        <section id="form">
             <h2>Login</h2>
             <form action="/send" method="post">
                 <label for="name">Name:</label>
@@ -48,13 +48,15 @@
                 <input type="text" id="age" name="age" placeholder="Enter your age" required >
 
                 <button id="btninfo">Send</button>
+
+                <div id="answer"></div>
             </form>
         </section>
     </main>
 
     <!-- This section is for our footer with our contact information. -->
     <footer>
-        <article class="redes-sociales">
+        <article id="redes">
             <h3>Social Networks</h3>
             <a href="" target="_blank"><img class="redes-sociales" src="" alt="logox"></a>
             <a href="" target="_blank"><img class="redes-sociales" src="" alt="logoy"></a>

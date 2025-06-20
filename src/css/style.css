@@ -1,0 +1,38 @@
+/* We add the default styles to the body of the HTML */
+body{
+    background-color: rgb(125, 92, 168);
+
+}
+
+h1,h2,h3{
+    color: brown;
+}
+
+nav{
+    background-color: yellow;
+}
+
+#about{
+    background-color: aquamarine;
+    border-radius: 20px;
+    padding: 80px;
+}
+
+#form{
+    padding: 80px;
+    background-color: rgb(86, 243, 24);
+}
+
+/* form{
+
+} */
+
+footer,#redes{background-color: cadetblue;
+
+}
+
+
+section{
+    padding: 100px;
+
+}
