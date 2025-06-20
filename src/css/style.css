@@ -1,38 +1,138 @@
-/* We add the default styles to the body of the HTML */
-body{
-    background-color: rgb(125, 92, 168);
 
+/*Sets a gradient background, centers content using flexbox, and applies a sans-serif font. */
+body {
+    background: linear-gradient(135deg, #233347 0%, #84939C 100%);
+    min-height: 100vh;
+    margin: 0;
+    font-family:'Inter',sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
 }
 
-h1,h2,h3{
-    color: brown;
+/*Styles the main container with a light background, rounded corners, shadow, and padding. */
+main {
+    background: rgba(245, 245, 245, 0.95);
+    border-radius: 18px;
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.15);
+    margin: 48px 0 32px 0;
+    max-width: 400px;
+    width: 100%;
+    padding: 40px 32px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-nav{
-    background-color: yellow;
+ /* Adds spacing between sections. */
+section {
+    width: 100%;
+    margin-bottom: 32px;
 }
 
-#about{
-    background-color: aquamarine;
-    border-radius: 20px;
-    padding: 80px;
+/* Arranges form elements in a vertical column with spacing. */
+#form form {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    align-items: stretch;
+}
+/* Styles form labels with color and font weight. */
+#form label {
+    font-weight: 500;
+    color: #233347;
+    margin-bottom: 4px;
 }
 
-#form{
-    padding: 80px;
-    background-color: rgb(86, 243, 24);
+/* Styles text inputs with padding, border, and background; highlights on focus */
+#form input[type="text"] {
+    padding: 10px 12px;
+    border: 1px solid #bfc9d1;
+    border-radius: 8px;
+    font-size: 1rem;
+    background: #f8fafc;
+    transition: border 0.2s;
 }
 
-/* form{
-
-} */
-
-footer,#redes{background-color: cadetblue;
-
+#form input[type="text"]:focus {
+    border: 1.5px solid #233347;
+    outline: none;
 }
 
+/* Styles the submit/info button with gradient, rounded corners, and hover effects. */
+#btninfo {
+    background: linear-gradient(90deg, #233347 0%, #84939C 100%);
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    padding: 12px 0;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.2s, transform 0.2s;
+    margin-top: 8px;
+}
+/* Styles in hover click */
+#btninfo:hover {
+    background: linear-gradient(90deg, #233347 60%, #4e5d6c 100%);
+    transform: translateY(-2px) scale(1.03);
+}
 
-section{
-    padding: 100px;
+/* Styles the area for displaying answers or messages. */
+#answer {
+    margin-top: 10px;
+    min-height: 24px;
+    color: #233347;
+    font-size: 1rem;
+}
 
+/* Styles the main heading with color, shadow, and spacing. */
+header h1 {
+    color: #fff;
+    text-shadow: 10px 10px 8px rgba(0, 0, 0, 0.18);
+    margin-top: 32px;
+    margin-bottom: 0;
+    font-size: 2.2rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+/* Styles the footer with centered text and spacing. */
+footer {
+    width: 100%;
+    text-align: center;
+    color: #fff;
+    margin-top: auto;
+    padding: 24px 0 8px 0;
+    background: transparent;
+}
+
+/* Styles the social media section heading. */
+#redes h3 {
+    color: #fff;
+    margin-bottom: 8px;
+}
+
+.redes-sociales{
+    width: 25px;
+    margin: 0 8px;
+    vertical-align: middle;
+}
+ /* Styles social media icons with size and hover scaling effect. */
+.redes-sociales:hover{
+    transition: ease-in-out 0.5s;
+    transform: scale(1.20);
+}
+
+/* Ensures images are responsive. */
+img{
+    max-width: 100%;
+    height: auto;
+}
+
+/* Styles copyright text. */
+.copy {
+    color: #e0e6ed;
+    font-size: 0.95rem;
+    margin-top: 12px;
 }
