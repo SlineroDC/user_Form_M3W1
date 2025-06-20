@@ -46,7 +46,7 @@ section {
 }
 
 /* Styles text inputs with padding, border, and background; highlights on focus */
-#form input[type="text"] {
+#form input[type="text"],[type="number"] {
     padding: 10px 12px;
     border: 1px solid #bfc9d1;
     border-radius: 8px;
@@ -55,7 +55,7 @@ section {
     transition: border 0.2s;
 }
 
-#form input[type="text"]:focus {
+#form input[type="text"],[type="number"]:focus {
     border: 1.5px solid #233347;
     outline: none;
 }
@@ -135,4 +135,20 @@ img{
     color: #e0e6ed;
     font-size: 0.95rem;
     margin-top: 12px;
+}
+
+/* Media query to make the design responsive on small screens */
+@media (max-width: 600px), (max-height: 500px) {
+    main {
+        max-width: 98vw;
+        padding: 24px 8px;
+        margin: 24px 0 16px 0;
+    }
+    header h1 {
+        font-size: 1.3rem;
+    }
+    #form input[type="text"], [type="number"] {
+        font-size: 0.98rem;
+        padding: 8px 8px;
+    }
 }
